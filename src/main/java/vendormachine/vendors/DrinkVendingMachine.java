@@ -41,7 +41,7 @@ public class DrinkVendingMachine {
 
     // This is how we'll select our "snack" from the array
     public Snack selectDrink(int arrayPosition){
-        if(arrayPosition >=  drinkList.size() || arrayPosition > 0) {
+        if(arrayPosition <=  drinkList.size() || arrayPosition > 0) {
             Snack selection = drinkList.get(arrayPosition);
 
             if(this.availableCredit < selection.cost()){
